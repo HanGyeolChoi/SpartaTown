@@ -7,8 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     private string playerName = "Temp";
     private SpriteType type = SpriteType.Penguin;
-
-    private void Awake()
+private void Awake()
     {
         if(Instance != null) Destroy(Instance);
         Instance = this;
